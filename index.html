@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-School</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <style>
+        .header{
+            background-color: rgb(240,255,240);
+        }
+        .navbar-brand img{
+            background-color:rgb(240,255,240);
+        }
+        .container {
+            margin-bottom: 50px;
+           
+        }
+        .top {
+            display: flex;
+        }
+        .text {
+            width: 500px;
+            height: 400px;
+            
+        }
+        .text-frame{
+            font-size: x-large;
+        }
+        .text-frame h1{
+            font-weight: bold;
+        }
+        .orange{
+            color: #F9784A;
+        }
+        .green{
+            color: #21B573;
+        }
+        .click{
+            background-color: #21B573;
+            color: white;
+            border:none;
+            padding: 6px 30px;
+            border-radius:30px;
+        }
+        .photo {
+            width: 550px;
+            height: 450px;
+            
+        
+        }
+        .photo .photo-frame img{
+            width: 100%;
+        }
+        
+        .book1{
+            width: 300px;
+            height: 300px;
+            border: none;
+            border-radius: 10px;
+            background-color: #F8FFFB;
+            display: block;
+            text-align: center;
+            margin: 20px;
+        }
+        .book2{
+            width: 300px;
+            height: 300px;
+            border: none;
+            border-radius: 10px;
+            background-color: #FFFFFF;
+            display: block;
+            text-align: center;
+            box-shadow: 1px 1px 2px;
+            margin: 20px;
+        }
+        .book3{
+            width: 300px;
+            height: 300px;
+            border: none;
+            border-radius: 10px;
+            background-color: #F8FFFB;
+            display: block;
+            text-align: center;
+            margin: 20px;
+        }
+        .book4{
+            width: 300px;
+            height: 300px;
+            border: none;
+            border-radius: 10px;
+            background-color: #F8FFFB;
+            display: block;
+            text-align: center;
+            margin: 20px;
+        }
+
+        .book-detail{
+            margin-top: 20px;
+        }
+        .book-frame img{
+            width: 100%;
+            width: 100px;
+            height: 120px;
+            margin-top: 50px;
+            
+        }
+        .book-header{
+            display: flex;
+            margin: 10px;
+            text-align: center;
+            padding-left: 100px;
+        }
+        .course1{
+            width: 350px;
+            height: 320px;
+            border: none;
+            border-radius: 10px;
+            background-color: none;
+            display: block;
+        }
+        .course2{
+            width: 350px;
+            height: 320px;
+            border: none;
+            border-radius: 10px;
+            background-color: none;
+            display: block;
+        }
+        .course3{
+            width: 350px;
+            height: 320px;
+            border: none;
+            border-radius: 10px;
+            background-color: none;
+            display: block;
+        }
+        
+        .course1 img{
+            width: 200px;
+            height: 250px;
+            margin-top: 20px;
+            width: 100%;
+        }
+        .course2 img{
+            width: 200px;
+            height: 250px;
+            margin-top: 20px;
+            width: 100%;
+        }
+        .course3 img{
+            width: 200px;
+            height: 250px;
+            margin-top: 20px;
+            width: 100%;
+        }
+        .study-online h1{
+            text-align: center;
+            margin-top: 100px;
+            display: block;
+        }
+        .footer{
+            display: flex;
+        }
+        
+        .footer1{
+            width: 200px;
+            height: 50px;
+            margin-top: 20px;
+            color: gray;
+        }
+        .date img{
+            width: 30px;
+            height: 30px;
+        }
+        .footer2{
+            width: 200px;
+            height: 50px;
+            margin-top: 20px;
+            color:gray;
+        }
+        .seats img{
+            width: 30px;
+            height: 30px;
+        }
+        .courses-online{
+            width: 390px;
+            height: 520px;
+            padding-top:5px;
+            padding-left:20px;
+            border: 5px;
+            border-radius: 10px;
+            box-shadow: 1px 1px 2px;
+            margin:20px;
+            display: block;
+        }
+        .courses{
+            display:flex;
+            margin-top: 100px;
+            margin-left: 110px;
+        }
+        .logo{
+            width: 300px;
+            height: 100px;
+        }
+        .navbar-brand img{
+            width: 300px;
+            height: 75px;
+        }
+        .testimonial{
+            margin-top: 50px;
+            text-align: center;
+        }
+        .image-testimonial{
+            width: 120px;
+            height: 120px;
+            margin: 10px;
+           
+        }
+        .image-testimonial img{
+            width: 120px;
+            height:120px;
+        }
+        .text-testimonial{
+            width: 500px;
+            height: 100px;
+            margin: 20px;
+            
+            
+            
+        }
+        .testi{
+            display: flex;
+            margin: 50px;
+            padding-left: 350px;
+        }
+        .paragraph{
+            width: 370px;
+            height: 100px;
+            margin: 40px;
+            color:white;
+          
+        }
+        .course{
+            width: 250px;
+            height: 200px;
+            margin: 40px;
+            color: white;
+            padding-left: 120px;
+            
+        }
+        .terms{
+            width: 250px;
+            height: 200px;
+            margin: 40px;
+            color:white;
+            padding-left: 100px;
+        }
+        .useful-link{
+            width: 250px;
+            height: 200px;
+            margin: 40px;
+            color:white;
+            padding-left: 100px;
+        }
+        .bottom{
+            display: flex;
+            padding-left: 150px;
+        }
+        .footer-end{
+            height: 60px;
+            margin: 60px;
+            text-align: center;
+            color: white;
+        }
+        .end{
+            background-color: #282531;
+        }
+                  
+    </style>
+</head>
+<body>
+    <section class="header">
+        <div class="container">
+            <nav class="navbar">
+                <section class="logo">
+                    <a class="navbar-brand" href="#">
+                        <img src="images/ICON/Logo.png" alt="">
+                    </a>
+                </section>
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a href=""></a>
+                  <a class="nav-link active" href="#books">Books</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#courses">Courses</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#others">Others</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <button class="click">Sign in</button>
+                    </a>
+                  </li>
+            </ul>
+            </nav>
+        </div>
+        <div class="container top">
+            <section class="text">
+                <div class="text-frame">
+                    <p><span class="orange">Are you ready to learn?</span></p>
+                    <h1>Learn With fun <br> on <span class="green">any schedule</span> </h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea ratione iusto corporis quia fugiat voluptatibus.</p>
+                </div>
+                <div class="button">
+                    <a class="link-button" target="-blank" href="">
+                        <button class="click">Get Started</button>
+                    </a>
+                </div>
+            </section >
+            <section class="photo">
+                <div class="photo-frame">
+                    <img src="images/Photos/Illustration.png" alt="">
+                </div>
+            </section>
+        </div>
+    </section>
+    <section class="book-header" id="books" >
+        <section class="book1">
+            <section class="book">
+                <div class="book-frame">
+                    <img src="images/ICON/book1.png" alt="">
+                </div>
+            </section>
+            <section>
+                <div class="book-detail">
+                    <h3>1500+ Topics</h3>
+                    <p>Learn Anythings</p>
+                </div>
+            </section>
+        </section>
+        <section class="book2">
+            <section class="book">
+                <div class="book-frame">
+                    <img src="images/ICON/Student2.png" alt="">
+                </div>
+            </section>
+            <section>
+                <div class="book-detail">
+                    <h3>1800+ Students</h3>
+                    <p>Learn Anythings</p>
+                </div>
+            </section>
+        </section>
+        <section class="book3">
+            <section class="book">
+                <div class="book-frame">
+                    <img src="images/ICON/Test3.png" alt="">
+                </div>
+            </section>
+            <section>
+                <div class="book-detail">
+                    <h3>9K+ Test Taken</h3>
+                    <p>Learn Anythings</p>
+                </div>
+            </section>
+        </section>
+        <section class="book4">
+            <section class="book">
+                <div class="book-frame">
+                    <img src="images/ICON/Students4.png" alt="">
+                </div>
+            </section>
+            <section>
+                <div class="book-detail">
+                    <h3>2000+ Students</h3>
+                    <p>Learn Anythings</p>
+                </div>
+            </section>
+        </section>
+    </section>
+    <div class="study-online">
+        <h1>Online Courses</h1>
+    </div>
+    <section class="courses" id="courses">
+        <section class="study1">
+            <div class="courses-online">
+                <div class="course1">
+                    <img src="images/Photos/Morder pyschology1.png" alt="">
+                </div>
+                <div>
+                    <div class="course-outline">
+                        <h3>Modern Pshchology</h3>
+                        <p>Designation</p>
+                        <button class="click">Buy Course</button>
+                    </div>
+                </div>
+                <section class="footer">
+                    <section class="footer1">
+                        <div class="date">
+                            <img src="images/ICON/calendar.png" alt=""> <strong>Start 20 April, 2021</strong> 
+                        </div>
+                    </section>
+                    <section class="footer2">
+                        <div class="seats">
+                            <img src="images/ICON/people.png" alt=""> <strong>60 seats</strong> 
+                        </div>
+                    </section>
+                </section>
+            </div>
+        </section>
+        <section class="study2">
+            <div class="courses-online">
+                <div class="course2">
+                    <img src="images/Photos/Morder psyc2.png" alt="">
+                </div>
+                <div>
+                    <div class="course-outline">
+                        <h3>Modern Pshchology</h3>
+                        <p>Designation</p>
+                        <button class="click">Buy Course</button>
+                    </div>
+                </div>
+                <section class="footer">
+                    <section class="footer1">
+                        <div class="date">
+                            <img src="images/ICON/calendar.png" alt=""> <strong>Start 20 April, 2021</strong> 
+                        </div>
+                    </section>
+                    <section class="footer2">
+                        <div class="seats">
+                            <img src="images/ICON/people.png" alt=""> <strong>60 seats</strong> 
+                        </div>
+                    </section>
+                </section>
+            </div>
+        </section>
+        <section class="study3">
+            <div class="courses-online">
+                <div class="course3">
+                    <img src="images/Photos/Morder pychons3.png" alt="">
+                </div>
+                <div>
+                    <div class="course-outline">
+                        <h3>Modern Pshchology</h3>
+                        <p>Designation</p>
+                        <button class="click">Buy Course</button>
+                    </div>
+                </div>
+                <section class="footer">
+                    <section class="footer1">
+                        <div class="date">
+                            <img src="images/ICON/calendar.png" alt=""> <strong>Start 20 April, 2021</strong> 
+                        </div>
+                    </section>
+                    <section class="footer2">
+                        <div class="seats">
+                            <img src="images/ICON/people.png" alt=""> <strong>60 seats</strong> 
+                        </div>
+                    </section>
+                </section>
+            </div>
+        </section>
+    </section>
+    <div class="testimonial">
+        <h1>Testimonial</h1>
+    </div>
+
+    <section class="testi" id="others">
+        
+    <section class="image-testimonial">
+        <img src="images/Photos/Man.png" alt="">
+    </section>
+    <section class="text-testimonial">
+        <p>There are many variants of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomized words which don't look even slightly believable.</p>
+    </section>
+    </section>
+
+    <section class="end">
+        <section class="bottom">
+            <section class="paragraph">
+                <p>Millions of people of all ages and from around the world are improving their lives with us.</p>
+            </section>
+            <setion class="course">
+                <h5>Course</h5>
+                <p>Graphic Design</p>
+                <p>Web Design</p>
+                <p>Business</p>
+                <p>Marketing</p>
+                <p>Engineering</p>
+            </setion>
+            <setion class="terms">
+                <h6>Terms</h6>
+                <p>Graphic Design</p>
+                <p>Web Design</p>
+                <p>Business</p>
+                <p>Marketing</p>
+                <p>Engineering</p>
+            </setion>
+            <setion class="useful-link">
+                <h6>Useful Link</h6>
+                <p>Graphic Design</p>
+                <p>Web Design</p>
+                <p>Business</p>
+                <p>Marketing</p>
+                <p>Engineering</p>
+            </setion>
+        </section>
+        <section class="footer-end">
+            <p>Copyright © 2020 Rokomari.com</p>
+        </section>
+    </section>
+    
+    
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
